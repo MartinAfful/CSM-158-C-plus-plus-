@@ -1,0 +1,208 @@
+#include <iostream>
+using namespace std;
+
+string name;
+char Grade;
+int CSM152;
+int CSM166; 
+int STAT166; 
+int ECON152;
+int CSM158; 
+int MATH162;
+int ENGL158;
+double CSM152t;
+double MATH162t;
+double STAT166t;
+double ECON152t; 
+double CSM158t;
+double ENGL158t;
+double CSM166t;
+int indexnumber;
+int totalcredithours;
+double score;
+double CWA;
+double Weight;
+int confirmation;
+
+int main()
+{
+    cout << "Enter your name:";
+        cin>>name;
+    cout <<"Enter your index number:";
+        cin>>indexnumber;
+    if (indexnumber>6000000 && indexnumber<10000000) {cout<<"\n🤗WELCOME TO COMSCI RESULTS HUB🤗"<<endl;
+      // Code to run if the condition is true
+    } else {
+     cout<< "    INVALID INDEXNUMBER \n😊ENTER A VALID INDEXNUMBER:";
+        cin>>indexnumber;
+    cout<< "🤗WELCOME TO COMSCI RESULTS HUB🤗\n"<<endl; // Code to run if the condition is false
+    }
+    
+    cout << "\n⏩Enter your score for CSM152:";
+    cin>> CSM152; // Now the mark input is outside the if/else block
+    {if (CSM152 >=80)
+    cout << "  🎉CONGRATULATIONS🎉\n" <<name<< " you had an A in CSM152"<<endl;
+    else if (CSM152 >=70)
+    cout << " 😁GOOD JOB😁\n"<<name<<" you had a B in CSM152"<<endl;
+    else if (CSM152 >=60)
+    cout <<" 🫵 YOU CAN DO BETTER 🫵\n" <<name<<" you had a C in CSM152"<<endl;
+    else if (CSM152 >=50)
+    cout <<" 😔YOU NEED TO WORK HARDER😔\n"<<name<<" you had a D in CSM152"<<endl;
+    else if (CSM152 >=40)
+    cout << " 😥POOR PERFORMANCE😥\n" <<name<< " you had an E in CSM152"<<endl;
+    else if (CSM152 <30)
+    cout << " 😭YOU FAILED😭\n" <<name<<" you had an F in CSM152"<<endl;}
+
+    cout << "⏩Enter your score for MATH162:";
+    cin>> MATH162;
+    {if (MATH162 >=80)
+    cout << " 🎉CONGRATULATIONS🎉\n" <<name<< " you had an A in MATH162"<<endl;
+    else if (MATH162 >=70)
+    cout << " 😁GOOD JOB😁\n"<<name<<" you had a B in MATH162"<<endl;
+    else if (MATH162 >=60)
+    cout <<" 🫵 YOU CAN DO BETTER 🫵\n" <<name<<" you had a C in MATH162"<<endl;
+    else if (MATH162 >=50)
+    cout << " 😔YOU NEED TO WORK HARDER😔\n"<<name<<" you had a D in MATH162"<<endl;
+    else if (MATH162 >=40)
+    cout << " 😥POOR PERFORMANCE😥\n" <<name<< " you had an E in MATH162"<<endl;
+    else if (MATH162 <30)
+    cout << " 😭YOU FAILED😭\n" <<name<<" you had an F in MATH162"<<endl;}
+
+    cout<< "⏩Enter your score for STAT166:";
+    cin>> STAT166;
+
+    {if (STAT166 >=80)
+    cout << "  🎉CONGRATULATIONS🎉\n" <<name<< " you had an A in STAT166" <<endl;
+    else if (STAT166 >=70)
+    cout << "  😁GOOD JOB😁\n"<<name<<" you had a B in STAT166"<<endl;
+    else if (STAT166 >=60)
+    cout <<"  🫵 YOU CAN DO BETTER 🫵\n"<<name<<" you had a C in STAT166"<<endl;
+    else if (STAT166 >=50)
+    cout << " 😔YOU NEED TO WORK HARDER😔\n"<<name<<" you had a D in STAT166"<<endl;
+    else if (STAT166 >=40)
+    cout << "  😥POOR PERFORMANCE😥\n" <<name<< " you had an E in STAT166"<<endl;
+    else if (STAT166 <30)
+    cout <<"  😭YOU FAILED😭\n" <<name<<" you had an F in STAT166"<<endl;}
+
+    cout<< "⏩Enter your score for ECON152:";
+    cin>> ECON152;
+    {if (ECON152 >=80)
+    cout <<"  🎉CONGRATULATIONS🎉\n" <<name<< " you had an A in ECON152"<<endl;
+    else if (ECON152 >=70)
+    cout <<"  😁GOOD JOB😁\n"<<name<<" you had a B in ECON152"<<endl;
+    else if (ECON152 >=60)
+    cout <<   "🫵 YOU CAN DO BETTER 🫵\n"<<name<<" you had a C in ECON152"<<endl;
+    else if (ECON152 >=50)
+    cout << "  😔YOU NEED TO WORK HARDER😔\n"<<name<<" you had a D in ECON152"<<endl;
+    else if (ECON152 >=40)
+    cout <<"  😥POOR PERFORMANCE🥲\n" <<name<< " you had an E in ECON152"<<endl;
+    else if (ECON152 <30)
+    cout <<"  😭YOU FAILED😭\n" <<name<<" you had an F in ECON152"<<endl;}
+
+    cout<< "⏩Enter your score for CSM158:";
+      cin>> CSM158;
+    {if (CSM158 >=80)
+    cout << "   🎉CONGRATULATIONS🎉\n" <<name<< " you had an A in CSM158"<<endl;
+    else if (CSM158 >=70)
+    cout <<   "😁GOOD JOB😁\n"<<name<<" you had a B in CSM158"<<endl;
+    else if (CSM158 >=60)
+    cout <<  " 🫵 YOU CAN DO BETTER 🫵\n" <<name<<" you had a C in CSM158"<<endl;
+    else if (CSM158 >=50)
+    cout << "   😔YOU NEED TO WORK HARDER😔\n"<<name<<" you had a D in CSM152"<<endl;
+    else if (CSM158 >=40)
+    cout << "   😥POOR PERFORMANCE🥲\n" <<name<< " you had an E in CSM158"<<endl;
+    else if (CSM158 <30)
+    cout << "    😭YOU FAILED😭\n" <<name<<" you had an F in CSM158"<<endl;}
+
+    cout<< "⏩Enter your score for ENGL158:";
+        cin>> ENGL158;
+    {if (ENGL158 >=80)
+    cout << "   🎉CONGRATULATIONS🎉\n" <<name<< " you had an A in ENGL158 "<<endl;
+    else if (ENGL158 >=70)
+    cout << "   😁GOOD JOB\n"<<name<<" you had a B in ENGL158"<<endl;
+    else if (ENGL158 >=60)
+    cout << "   🫵YOU CAN DO BETTER🫵\n" <<name<<" you had a C in ENGL158"<<endl;
+    else if (ENGL158 >=50)
+    cout << "   😔YOU NEED TO WORK HARDER😔\n"<<name<<" you had a D in ENGL152"<<endl;
+    else if (ENGL158 >=40)
+    cout << "   🥲POOR PERFORMANCE😥\n" <<name<< " you had an E in ENGL158"<<endl;
+    else if (ENGL158 <30)
+    cout << "   😭YOU FAILED😭\n" <<name<<" you had an F in ENGL158"<<endl;}
+
+    cout<< "⏩Enter your score for MATH166:";
+    cin>> CSM166;
+    {if (CSM166 >=80)
+    cout << "   🎉CONGRATULATIONS🎉\n" <<name<< " you had an A in CSM166"<<endl;
+    else if (CSM166 >=70)
+    cout << "  😁GOOD JOB😁\n"<<name<<" you had a B in CSM166"<<endl;
+    else if (CSM166 >=60)
+    cout << "  🫵 YOU CAN DO BETTER 🫵\n" <<name<<" you had a C in CSM166"<<endl;
+    else if (CSM166>=50)
+cout << "      😔YOU NEED TO WORK HARDER😔\n"<<name<<" you had a D in CSM166"<<endl;
+    else if (CSM166 >=40)
+cout << "      🥲POOR PERFORMANCE😥\n" <<name<< " you had an E in CSM166"<<endl;
+    else if (CSM166 <30)
+cout << "      😭YOU FAILED😭\n" <<name<<" you had an F in CSM166"<<endl;}
+    
+    cout<< "Do you want to calculate your CWA? \n 1.Yes \n 2.No \n Reply:";
+    cin>> confirmation;
+    if (confirmation == 1 )
+{cout <<"⏩Enter your score for CSM152:";  
+        cin>>CSM152;
+cout <<"⏩Enter your score for CSM158:"; 
+       cin>>CSM158;
+cout <<"⏩Enter your score for ECON152:"; 
+       cin>>ECON152;
+cout <<"⏩Enter your score for CSM166:"; 
+        cin>>CSM166;
+cout <<"⏩Enter your score for STAT166:"; 
+       cin>>STAT166;
+cout <<"⏩Enter your score for ENGL152:";        
+      cin>>ENGL158;
+cout <<"⏩Enter your score for MATH162:";        
+       cin>>MATH162;
+ 
+ cout <<"\n⏩Enter your credit hours for CSM152:"; 
+          cin>>CSM152t;
+ cout << "⏩Enter your credit hours for CSM158:";  
+         cin>>CSM158t;
+ cout <<"⏩Enter your credit hours for ECON152:";  
+        cin>>ECON152t;
+ cout <<"⏩Enter your credit hours for CSM166:";  
+          cin>>CSM166t;
+ cout <<"⏩Enter your credit hours for ENGL158:";  
+         cin>>ENGL158t;
+ cout <<"⏩Enter your credit hours for STAT166:";  
+         cin>>STAT166t;
+ cout <<"⏩Enter your credit hours for MATH162:";  
+         cin>>MATH162t;
+  totalcredithours = MATH162t + STAT166t + CSM166t + ECON152t + CSM152t + ENGL158t + CSM158t ;
+
+ Weight = (MATH162 * MATH162t) +(STAT166 * STAT166t) +(ENGL158 * ENGL158t) +(ECON152 * ECON152t) +(CSM158 * CSM158t) + (CSM152 * CSM152t) +(CSM166 *CSM166t) ;
+
+ CWA = Weight/totalcredithours ;
+ cout<<"Your CWA is "  <<CWA<<endl;
+     { if ( CWA >=70)
+ cout<<name<<" you are a First Class Student🎉"<<endl;
+     else if (CWA>=69)
+ cout<<name<<  "  you are a second class upper Student" <<endl;
+     else if (CWA >=59)
+ cout<<name<<" you are a second class lower Student" <<endl;
+      else if (CWA<49)
+ cout  <<name<<"  you had a pass"<<endl;}
+  cout <<"Thank You "<<name<<" for visiting the COMSCI RESULTS HUB"<<endl;
+    }  else if (confirmation==2)
+    { cout<<"🤗THANK YOU FOR USING COMSCI RESULTS HUB🤗"<<endl;}
+    
+
+
+    
+    return 0;
+}
+
+
+
+     
+
+   
+ 
